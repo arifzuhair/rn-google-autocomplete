@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = "AIzaSyBkgr_Koa6ABd60CZtdW-E4Hza-1NDZ0wo";
+const API_KEY = process.env.EXPO_PUBLIC_GOOGLE_MAPS_API_KEY;
 const baseGMapAPI = axios.create({
   baseURL: "https://maps.googleapis.com/maps/api",
   params: {
